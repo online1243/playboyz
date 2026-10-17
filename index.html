@@ -20,31 +20,19 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jobs Near Home - Telegram Channel</title>
+  <title>Be Aware & Real News - Telegram Channel</title>
   <style>
     :root {
-      --primary: #229ED9;
-      --primary-dark: #1b82b3;
+      --primary: #ef4444;       /* News alert red accent */
+      --primary-dark: #dc2626;  /* Darker red on hover */
+      --telegram: #229ED9;
       --bg: #0f172a;
       --card-bg: #1e293b;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
-      --accent: #22c55e;
+      --accent: #f59e0b;       /* Warning/Awareness Yellow */
     }
 
     * {
@@ -71,34 +59,55 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
       border-radius: 20px;
       padding: 32px 24px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       border: 1px solid #334155;
     }
 
+    /* Avatar Slideshow Styling */
     .avatar-wrapper {
       position: relative;
       width: 110px;
       height: 110px;
       margin: 0 auto 18px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--primary);
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
     }
 
     .avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--primary);
-      box-shadow: 0 4px 12px rgba(34, 158, 217, 0.3);
+      opacity: 0;
+      animation: imageFade 12s infinite ease-in-out;
+    }
+
+    /* Keyframe animation for switching 4 images */
+    .avatar:nth-child(1) { animation-delay: 0s; }
+    .avatar:nth-child(2) { animation-delay: 3s; }
+    .avatar:nth-child(3) { animation-delay: 6s; }
+    .avatar:nth-child(4) { animation-delay: 9s; }
+
+    @keyframes imageFade {
+      0% { opacity: 0; transform: scale(1); }
+      5% { opacity: 1; }
+      25% { opacity: 1; }
+      30% { opacity: 0; transform: scale(1.05); }
+      100% { opacity: 0; }
     }
 
     .badge {
       display: inline-block;
-      background: rgba(34, 197, 94, 0.15);
+      background: rgba(245, 158, 11, 0.15);
       color: var(--accent);
-      border: 1px solid rgba(34, 197, 94, 0.3);
+      border: 1px solid rgba(245, 158, 11, 0.3);
       font-size: 12px;
       font-weight: 600;
-      padding: 4px 10px;
+      padding: 4px 12px;
       border-radius: 20px;
       margin-bottom: 12px;
       text-transform: uppercase;
@@ -137,7 +146,7 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: rgba(34, 158, 217, 0.2);
+      background: rgba(239, 68, 68, 0.2);
       color: var(--primary);
       width: 22px;
       height: 22px;
@@ -145,6 +154,7 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
       margin-right: 12px;
       font-weight: bold;
       font-size: 12px;
+      flex-shrink: 0;
     }
 
     .cta-btn {
@@ -153,7 +163,7 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
       justify-content: center;
       gap: 10px;
       width: 100%;
-      background: var(--primary);
+      background: var(--telegram);
       color: #fff;
       text-decoration: none;
       font-weight: 600;
@@ -165,7 +175,7 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
     }
 
     .cta-btn:hover {
-      background: var(--primary-dark);
+      background: #1b82b3;
       transform: translateY(-1px);
     }
 
@@ -185,25 +195,25 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
 <body>
 
   <div class="container">
+    <!-- Animated Profile Images Container -->
     <div class="avatar-wrapper">
-      <img 
-        class="avatar" 
-        src="https://i.pinimg.com/736x/3b/33/49/3b3349239ef78d09567b8801df1639e6.jpg" 
-        alt="Channel Profile"
-      >
+      <img class="avatar" src="https://i.pinimg.com/736x/13/31/75/1331759bd9749203ebeb32621601e1a4.jpg" alt="Awareness Channel DP 1">
+      <img class="avatar" src="https://i.pinimg.com/1200x/32/54/b6/3254b6d0d2125f85a97411040944697c.jpg" alt="Awareness Channel DP 2">
+      <img class="avatar" src="https://i.pinimg.com/1200x/e1/6a/54/e16a548f85ee88e6be4f3ea8175de639.jpg" alt="Awareness Channel DP 3">
+      <img class="avatar" src="https://i.pinimg.com/736x/66/95/3d/66953d4bcf2538662cbfd366c6497ba1.jpg" alt="Awareness Channel DP 4">
     </div>
 
-    <span class="badge">Boys Only Group</span>
+    <span class="badge">⚠ Real News & Awareness</span>
 
-    <h1>Play Boyz Job</h1>
+    <h1>Be Aware & Stay Alert</h1>
     <p class="subtitle">
-      Direct vacancies, local part-time & full-time work with quick joining. Verified hiring alerts daily.
+      Get instant alerts on real news, scam exposures, viral truth, and critical awareness updates before anyone else.
     </p>
 
     <ul class="features">
-      <li><span>✓</span> Verified local companies & stores</li>
-      <li><span>✓</span> No consultation fee / direct contact</li>
-      <li><span>✓</span> Daily job alerts in your city & area</li>
+      <li><span>✓</span> 100% Fact-checked & verified real news</li>
+      <li><span>✓</span> Fraud, online scam & cyber safety alerts</li>
+      <li><span>✓</span> Instant viral updates & truth exposure</li>
     </ul>
 
     <a href="https://t.me/+8VksIEGfy0llYTI9" class="cta-btn" target="_blank" rel="noopener noreferrer">
@@ -213,7 +223,7 @@ src="https://www.facebook.com/tr?id=1079330528056393&ev=PageView&noscript=1"
       Join Channel on Telegram
     </a>
 
-    <p class="footer-note">Free to join • Instant updates</p>
+    <p class="footer-note">Free Access • Real-time Alerts</p>
   </div>
 
 </body>
